@@ -15,6 +15,14 @@ app.use(methodOverride('_method'));
 
 app.set('view_engine', 'ejs');
 
+app.get("/", function(req, res){
+  res.redirect("/cheeses");
+});
+
+app.get('/cheeses', function(req, res){
+  //get all cheses from db and render to an ejs template file
+})
+
 app.listen(3000, function(){
     console.log('listening on port 3000!')
 });
