@@ -23,6 +23,10 @@ app.get('/cheeses', function(req, res){
   //get all cheses from db and render to an ejs template file
 })
 
+
+app.post('/cheeses', function(req, res){
+  //bull
+})
 app.listen(3000, function(){
     console.log('listening on port 3000!')
 });
